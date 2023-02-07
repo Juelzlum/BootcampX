@@ -15,6 +15,3 @@ CREATE TABLE students (
   end_date DATE,
   cohort_id INTEGER REFERENCES cohorts(id) ON DELETE CASCADE
 );
-
- \i migrations/students_cohorts.sql
- migrations/students_cohorts.sql.sql
