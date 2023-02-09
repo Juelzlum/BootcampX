@@ -8,6 +8,7 @@ HAVING count(assignment_submissions.*) < 100;
 
 --Get the total number of assignments for each day of bootcamp. ++
 -- The same query as before, but only return rows where total assignments is greater than or equal to 10.
+
 SELECT day, count(*) as total_assignments 
 FROM assignments
 GROUP BY day
